@@ -1,0 +1,5 @@
+android_device_samsung_golden-common
+===================================
+
+Common configuration files for all Samsung Galaxy S3 Mini variants (8 GB, 16 GB, Latin version and NFC version).
+Especific variant config should go on to it's own device config
