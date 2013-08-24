@@ -20,9 +20,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Inherit common configuration for Samsung u8500 devices
 $(call inherit-product-if-exists, device/samsung/u8500-common/device_u8500-common.mk)
 
-# Inherit the proprietary vendors blobs for Samsung Golden.
-# FIXME: We take all the u8500-common, golden-common, and golden specific blobs together without using different repos. 
-$(call inherit-product-if-exists, vendor/samsung/golden/golden-vendor.mk)
+# Inherit the proprietary common vendors blobs for all Samsung Golden variants.
+$(call inherit-product-if-exists, vendor/samsung/golden-common/golden-common-vendor.mk)
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
